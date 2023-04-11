@@ -1,0 +1,56 @@
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #eaeaea;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+}
+
+.settingsContainer-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.settingsContainer-DragZone {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.settingsContainer-fields {
+  border: 1px solid #eaeaea;
+  border-left: 4px solid #eaeaea;
+  background: none;
+  border-radius: 4px;
+  text-align: left;
+  padding: 0.5em 1rem;
+  width: 150px;
+  text-transform: capitalize;
+}
+
+.settingsContainer-DragZone .selected {
+  border-left: 4px solid #136fed;
+}
+
+.dragging {
+  cursor: move;
+}
+
+@media screen and (max-width: 1000px) {
+  .settingsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .settingsContainer-DragZone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
